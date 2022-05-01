@@ -23,7 +23,7 @@
                         <a href="#about-me">About Me</a>
                     </li>
                     <li>
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="#myportfolio-title">Portfolio</a>
                     </li>
                     <li>
                         <a href="#contact-me">Contact Me</a>
@@ -39,45 +39,53 @@
                     <p> I am on my way to become a</p>
                     <p id="fullstack">Full Stack Web-Developer</p>
                     <p>Want to work together?</p>
-                    <a id="contact" href="contact-button">Message Me!</a>
+                    <a id="contact" href="#contact-me">Message Me!</a>
                     <p>Scroll to learn more about me and what I do ⬇</p>
                 </article>
             </div>
         </section>
         <!-- About me -->
         <section id="about-me" class="about-me">
-            <img id="portrait" src="./assets/images/74BB1501-7FC1-4D50-8374-8010CDA0DC04.jpg" alt="Portrait picture of Jorge Monteagudo"/>
-            <h2 class="section-title">About Me</h2>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit amet repudiandae ab placeat eos magnam mollitia consequuntur asperiores repellat voluptas accusamus, fugit neque suscipit ex blanditiis enim fugiat? Consequuntur?<br>      <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptas sequi ullam itaque provident magni et consectetur! Eveniet, laboriosam consectetur suscipit nisi ad ea voluptatum soluta, hic minus magnam tempora.</p>
+            <div id="portrait-div">
+                <img id="portrait" src="./assets/images/74BB1501-7FC1-4D50-8374-8010CDA0DC04.jpg" alt="Portrait picture of Jorge Monteagudo"/>
+            </div>
+            <div id="aboutme-text-div">
+                <h2 class="section-title">About Me</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit amet repudiandae ab placeat eos magnam mollitia consequuntur asperiores repellat voluptas accusamus, fugit neque suscipit ex blanditiis enim fugiat? Consequuntur?<br>      <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptas sequi ullam itaque provident magni et consectetur! Eveniet, laboriosam consectetur suscipit nisi ad ea voluptatum soluta, hic minus magnam tempora.</p>
+            </div>
         </section>
     <!-- Portfolio Section -->
-        <section id="portfolio" class="portfolio">
-            <h2 class="section-title">My Portfolio</h2>
-            <div class="first-project">
-                <a href="https://jorge30fm.github.io/run-buddy/" target="_blank">
-                    <img class="first-project-image project-image" src="./assets/images/run-buddy.jpg" alt="Run Buddy Website Home Picture"/>
-                </a>
-                <p class="caption">Run Buddy <br> Html Css</p>
-            </div>
-            <div class="projects">
-                <div class="other-projects">
+        <div id="portfolio-section">
+            <h2 id="myportfolio-title"
+             class="section-title">My Portfolio</h2>
+            <section class="portfolio">
+
+                <div class="first-project">
+                    <a href="https://jorge30fm.github.io/run-buddy/" target="_blank">
+                        <img class="first-project-image project-image" src="./assets/images/run-buddy.jpg" alt="Run Buddy Website Home Picture"/>
+                    </a>
+                    <figcaption class="caption">Run Buddy <br> Html / Css</figcaption>
+                </div>
+                <div class="projects">
+                    <div class="other-projects">
                     <img class="project-image" src="./assets/images/pexels-rahul-716398.jpg" alt="placeholder image"/>
-                    <p class="caption">Coming Soon</p>
+                    <figcaption class="caption">Coming Soon</figcaption>
                 </div>
                 <div class="other-projects">
                     <img class="project-image" src="./assets/images/pexels-rahul-716398.jpg" alt="placeholder image"/>
-                    <p class="caption">Coming Soon</p>
+                    <figcaption class="caption">Coming Soon</figcaption>
                 </div>
                 <div class="other-projects">
                     <img class="project-image" src="./assets/images/pexels-rahul-716398.jpg" alt="placeholder image"/>
-                    <p class="caption">Coming Soon</p>
+                    <figcaption class="caption">Coming Soon</figcaption>
                 </div>
                 <div class="other-projects">
                     <img class="project-image" src="./assets/images/pexels-rahul-716398.jpg" alt="placeholder image"/>
-                    <p class="caption">Coming Soon</p>
+                    <figcaption class="caption">Coming Soon</figcaption>
                 </div>
-            </div>
-        </section>
+                </div>
+            </section>
+        </div>
     <!--Contact Me -->
 
         <section id="contact-me"
