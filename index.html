@@ -9,100 +9,136 @@
     <body>
 <!-- header and navigation section -->
     <!--header/title-->
-    <header>
-        <h1>
-            <a href="./index.html">JFM</a>
-        </h1>
-    <!--navigation -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="portfolio">Portfolio</a>
-                </li>
-                <li>
-                    <a href="contact-me">Contact Me</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <section class="hero">
-        <div class="hero-cta">
-            <h2>Hello, I am <span id="name">Jorge Monteagudo </span></h2>
-            <h3> I am on my way to become a full stack web-developer </h3>
-        </div>
-        <div>
-            <h3>Want to work together?</h3>
-            <a href="contact-button">Message Me</a>
-        </div>
-    </section>
-     <!-- About me -->
-    <section class="about-me">
-        <img src="./assets/images/74BB1501-7FC1-4D50-8374-8010CDA0DC04.jpg" alt="Portrait picture of Jorge Monteagudo"/>
-        <div class="bio">
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit amet repudiandae ab placeat eos magnam mollitia consequuntur asperiores repellat voluptas accusamus, fugit neque suscipit ex blanditiis enim fugiat? Consequuntur?</p>
-        </div>
-    </section>
-<!-- Portfolio Section -->
-    <section class="portfolio">
-        <div class="first-project">
-            <img class="project-image" src="./assets/images/hero-bg.jpg" alt="Run Buddy Website Home Picture"/>
-            <h3>Run Buddy</h3>
-            <h4>Html/CSS</h4>
-        </div>
-        <div class="other-projects">
-            <img class="project-image" src="./assets/images/pexels-rahul-716398.jpg" alt="placeholder image"/>
-            <h3>Coming Soon</h3>
-        </div>
-        <div class="other-projects">
-            <img class="project-image" src="./assets/images/pexels-rahul-716398.jpg" alt="placeholder image"/>
-            <h3>Coming Soon</h3>
-        </div>
-        <div class="other-projects">
-            <img class="project-image" src="./assets/images/pexels-rahul-716398.jpg" alt="placeholder image"/>
-            <h3>Coming Soon</h3>
-        </div>
-        <div class="other-projects">
-            <img class="project-image" src="./assets/images/pexels-rahul-716398.jpg" alt="placeholder image"/>
-            <h3>Coming Soon</h3>
-        </div>
-    </section>
-<!--Contact Me -->
+        <header>
+            <h1>
+                <a href="./index.html">
+                    <img class="logo" src="./assets/images/heroImage.png"/>
+                </a>
+            </h1>
+        <!--navigation -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about-me">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact-me">Contact Me</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero">
+            <div class="hero-cta">
+                <h3 id="welcome">WELCOME, I AM </h3>
+                <h2 id="name">Jorge Felix Monteagudo </h2>
+                <article>
+                    <p> I am on my way to become a</p>
+                    <p id="fullstack">Full Stack Web-Developer</p>
+                    <p>Want to work together?</p>
+                    <a id="contact" href="contact-button">Message Me!</a>
+                    <p>Scroll to learn more about me and what I do ⬇</p>
+                </article>
+            </div>
+        </section>
+        <!-- About me -->
+        <section id="about-me" class="about-me">
+            <img id="portrait" src="./assets/images/74BB1501-7FC1-4D50-8374-8010CDA0DC04.jpg" alt="Portrait picture of Jorge Monteagudo"/>
+            <h2 class="section-title">About Me</h2>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit amet repudiandae ab placeat eos magnam mollitia consequuntur asperiores repellat voluptas accusamus, fugit neque suscipit ex blanditiis enim fugiat? Consequuntur?<br>      <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptas sequi ullam itaque provident magni et consectetur! Eveniet, laboriosam consectetur suscipit nisi ad ea voluptatum soluta, hic minus magnam tempora.</p>
+        </section>
+    <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <h2 class="section-title">My Portfolio</h2>
+            <div class="first-project">
+                <img class="first-project-image project-image" src="./assets/images/run-buddy.jpg" alt="Run Buddy Website Home Picture"/>
+                <p class="caption">Run Buddy <br> Html Css</p>
+            </div>
+            <div class="projects">
+                <div class="other-projects">
+                    <img class="project-image" src="./assets/images/pexels-rahul-716398.jpg" alt="placeholder image"/>
+                    <p class="caption">Coming Soon</p>
+                </div>
+                <div class="other-projects">
+                    <img class="project-image" src="./assets/images/pexels-rahul-716398.jpg" alt="placeholder image"/>
+                    <p class="caption">Coming Soon</p>
+                </div>
+                <div class="other-projects">
+                    <img class="project-image" src="./assets/images/pexels-rahul-716398.jpg" alt="placeholder image"/>
+                    <p class="caption">Coming Soon</p>
+                </div>
+                <div class="other-projects">
+                    <img class="project-image" src="./assets/images/pexels-rahul-716398.jpg" alt="placeholder image"/>
+                    <p class="caption">Coming Soon</p>
+                </div>
+            </div>
+        </section>
+    <!--Contact Me -->
 
-    <section class="contact-me">
-        <h3>Get in Touch</h3>
-        <p> Want to say hi? Do you have a question, new projecrt or opportunity? Do you want to hire me or work together? Let's get in touch.</p>
-        <div class="contact-info">
-            <address>
-                <div>
-                    <img src="./assets/images/location-icon.png" alt="location icon"/>
-                    Charlotte, NC
-                </div>
-                <div>
-                    <img src="./assets/images/email-icon.png" alt="email icon"/>
-                    <a href="mailto:jorge30fm@gmail.com">jorge30fm@gmail.com</a>
-                </div>
-                <div>
-                    <img src="./assets/images/phone-icon.png" alt="location icon"/>
-                    (336) 918-2417
-                </div>
-            </address>
+        <section id="contact-me"
+         class="contact-me">
+            <h3 class="section-title">Get in Touch</h3>
+            <p class="text"> Tell me about your project<br>
+                and we can create something together.<br><br> <span>Let's get in touch.</span></p>
 
-        </div>
-        <form>
-            <input type="text" id="contact-name" class="form-input" placeholder="Name"/>
-            <input type="email" id="email" class="form-input" placeholder="Email"/>
-            <input type="tel" id="phone" class="form-input" placeholder="Phone Numeber"/>
-            <textarea id="contact-message" class="form-input" placeholder="Enter your message here"></textarea>
-            <button type="submit">
-                Send
-            </button>
-        </form>
-    </section>
-<!-- footer -->
-    <footer
+            <div class="contact-flex">
+                <address class="left-icons">
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <img class="icono" id="location" src="./assets/images/location-icon.png" alt="location icon"/>
+                        </div>
+                        <p>
+                        Charlotte, NC
+                        </p>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <img class="icono" id="mail" src="./assets/images/email-icon.png" alt="email icon"/>
+                        </div>
+                        <p>
+                            <a href="mailto:jorge30fm@gmail.com">jorge30fm@gmail.com</a>
+                        </p>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <img class="icono" id="phone" src="./assets/images/phone-icon.png" alt="location icon"/>
+                        </div>
+                         <p>
+                             (336) 918-2417
+                        </p>
+                    </div>
+                </address>
+                <form>
+                    <input type="text" id="contact-name" class="form-input" placeholder="Name"/>
+                    <input type="email" id="email" class="form-input" placeholder="Email"/>
+                    <input type="tel" id="cellphone" class="form-input" placeholder="Phone Number"/>
+                    <textarea id="contact-message" class="form-input" placeholder="Enter your message here"></textarea>
+                    <button type="submit">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </section>
     </body>
+<!-- footer -->
+    <footer>
+        <img class="logo" src="./assets/images/heroImage.png"/>
+        <div>
+            <a href="https://www.instagram.com/jorgefmont/" target="_blank">
+                <img src="./assets/images/instagram.png">
+            </a>
+            <a href="https://twitter.com/jorgefelixm30" target="_blank">
+                <img src="./assets/images/twitter.png">
+            </a>
+            <a href="https://www.linkedin.com/in/jorge-monteagudo-4a348814a/" target="_blank">
+             <img src="./assets/images/linkedin.png">
+            </a>
+            <a href="https://github.com/jorge30fm" target="_blank">
+                <img src="./assets/images/github.png">
+            </a>
+        </div>
+        <p>© Copyright 2022. All rights reserved </p>
+    </footer>
 </html>
