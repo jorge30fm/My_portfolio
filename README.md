@@ -6,6 +6,3 @@ This project is my portfolio showcasing my previous work and experience, and pro
 This website was built mobile first. Media queries were written to provide additional accessibility ford desktpos and ipads. Links in footer take user to corresponding social media sites.
 
 <img src="assets\images\schreenshot.JPG">
-
-#### Website Link: https://jorge30fm.github.io/My_portfolio/
-#### GitHub Link: https://github.com/jorge30fm
