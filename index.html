@@ -1,163 +1,336 @@
-<! DOCTYPE html>
-<html lang="en">
-    <head>
-        <link rel="stylesheet" href="./assets/css/style.css"/>
-        <link rel="shortcut icon" href="./assets/images/heroImage.png" type="image/x-icon">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta charset="UTF-8"/>
-        <title>Jorge's Portfolio</title>
-    </head>
-    <body>
-<!-- header and navigation section -->
-    <!--header/title-->
-        <header>
-            <h1>
-                <a href="./index.html">
-                    <img class="logo" src="./assets/images/heroImage.png" alt="website logo"/>
-                </a>
-            </h1>
-        <!--navigation -->
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about-me">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#myportfolio-title">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#contact-me">Contact Me</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <section class="hero">
-            <div class="hero-cta">
-                <h3 id="welcome">WELCOME, I AM </h3>
-                <h2 id="name">Jorge Felix Monteagudo </h2>
-                <article>
-                    <p> I am on my way to become a</p>
-                    <p id="fullstack">Full Stack Web-Developer</p>
-                    <p>Want to work together?</p>
-                    <a id="contact" href="#contact-me">Message Me!</a>
-                    <p>Scroll to learn more about me and what I do ⬇</p>
-                </article>
-            </div>
-        </section>
-        <!-- About me -->
-        <section id="about-me" class="about-me">
-            <div id="portrait-div">
-                <img id="portrait" src="./assets/images/74BB1501-7FC1-4D50-8374-8010CDA0DC04.jpg" alt="Portrait picture of Jorge Monteagudo"/>
-            </div>
-            <div id="aboutme-text-div">
-                <h2 class="section-title">About Me</h2>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit amet repudiandae ab placeat eos magnam mollitia consequuntur asperiores repellat voluptas accusamus, fugit neque suscipit ex blanditiis enim fugiat? Consequuntur?<br>      <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptas sequi ullam itaque provident magni et consectetur! Eveniet, laboriosam consectetur suscipit nisi ad ea voluptatum soluta, hic minus magnam tempora.</p>
-            </div>
-        </section>
-    <!-- Portfolio Section -->
-        <div id="portfolio-section">
-            <h2 id="myportfolio-title"
-             class="section-title">My Portfolio</h2>
-            <section class="portfolio">
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<title>Jorge's Portfolio</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script
+			src="https://kit.fontawesome.com/9c12933dec.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body id="home">
+		<header>
+			<a href="#home">
+				<img src="./assets/logo.png" class="logo" alt="website logo" />
+			</a>
+			<nav>
+				<ul>
+					<li>
+						<a href="#about-me" class="button btn btn-6"
+							><span>About Me</span></a
+						>
+					</li>
+					<li>
+						<a href="#myprojects" class="button btn btn-6"
+							><span>Portfolio</span></a
+						>
+					</li>
+					<li>
+						<a href="#contact-me" class="button btn btn-6"
+							><span>Contact Me</span></a
+						>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-                <div class="latest-project">
-                    <a href="https://glo6al.github.io/project-1-tm-9/" target="_blank">
-                        <img class="first-project-image project-image" src="./assets/images/furbaby_finder.png" alt="Run Buddy Website Home Picture"/>
-                    </a>
-                    <figcaption class="caption">Furbaby Finder <br> Html/CSS/jQuery/PetFinderAPi/DogFactsApi/Bulma</figcaption>
-                </div>
-                <div class="projects">
-                    <a href="https://jorge30fm.github.io/Code-quizzer/" target="_blank">
-                    <div class="other-projects">
-                    <img class="project-image" src="./assets/images/jorge30fm.github.io_Code-quizzer_.png" alt="placeholder image"/>
-                    </a>
-                    <figcaption class="caption">Code-Quizzer <br> html/CSS/JavaScript</figcaption>
-                </div>
-                <div class="other-projects">
-                    <a href="https://jorge30fm.github.io/git-it-done/" target="_blank">
-                    <img class="project-image" src="./assets/images/jorge30fm.github.io_git-it-done_.png" alt="placeholder image"/>
-                    </a>
-                    <figcaption class="caption">Git-it-done <br>html/CSS/JavaScript/GitHub API</figcaption>
-                </div>
-                <div class="other-projects">
-                    <a href="https://jorge30fm.github.io/weather-dashboard/" target="_blank">
-                    <img class="project-image" src="./assets/images/jorge30fm.github.io_weather-dashboard_.png" alt="placeholder image"/>
-                    </a>
-                    <figcaption class="caption">Weather Dashboard <br> html/CSS/JavaScript/OpenWeather Api/Bootstrap/jQuery/Moment.js</figcaption>
-                </div>
-                <div class="other-projects">
-                    <a href="https://jorge30fm.github.io/work_day_scheduler/ " target="_blank">
-                    <img class="project-image" src="./assets/images/jorge30fm.github.io_work_day_scheduler_.png" alt="placeholder image"/>
-                    </a>
-                    <figcaption class="caption">Work Day Scheduler<br>html/css/jQuery</figcaption>
-                </div>
-                </div>
-            </section>
-        </div>
-    <!--Contact Me -->
+		<section>
+			<img src="./assets/bg1.png" id="bg" />
+			<img src="./assets/rockwall.png" id="rockwall" />
+			<div id="text">
+				<h2>Jorge Monteagudo</h2>
+				<h3>Full-Stack Web Developer</h3>
+			</div>
+		</section>
+		<main>
+			<div id="about-me">
+				<div id="img-container">
+					<img
+						id="portrait"
+						src="./assets/portrait.jpg"
+						alt="Portrait picture of Jorge Monteagudo"
+					/>
+				</div>
+				<div id="description">
+					<h2 class="section-title title">ABOUT ME</h2>
+					<br />
+					<p class="bio">
+						Welcome! I am Jorge Monteagudo, a full stack web developer looking
+						for new challenges and developing new skills.
+						<br />
+						<br />
+						With a science background and experience with education I am always
+						curious, logical, creative and great communicator. Such drive allows
+						me to adapt to new environments and learn at fast speeds the tools
+						necessary to succeed in this every changing world of technology.<br /><br />I
+						look forward to contributing to your team!
+					</p>
+				</div>
+			</div>
+			<div id="skills">
+				<h2 class="section-title title no-mg">SKILLS</h2>
+				<div id="tag"></div>
+			</div>
+			<div id="myprojects">
+				<h2 class="section-title title">MY PORTFOLIO</h2>
+				<div id="portfolio">
+					<div class="thumb-container image">
+						<img class="thumbnail image_img" src="./assets/pngwing.com.png" />
+						<div class="image__overlay image__overlay--blur">
+							<a
+								class="btn"
+								href="https://glo6al.github.io/project-1-tm-9/"
+								target="_blank"
+								><div class="image__title">
+									A tinder-style animal adoption website
+								</div></a
+							>
+							<p class="image__description">Html/CSS/jQuery/APi/Bulma</p>
+						</div>
+					</div>
+					<div class="thumb-container image">
+						<img
+							class="thumbnail image_img"
+							src="assets/weather_dashboard.png"
+						/>
+						<div class="image__overlay image__overlay--blur">
+							<a
+								class="btn"
+								href="https://jorge30fm.github.io/weather-dashboard/"
+								target="_blank"
+								><div class="image__title">
+									Gather weather data of a city of your choice
+								</div></a
+							>
+							<p class="image__description">
+								html/CSS/JavaScript/OpenWeather Api/<br />Bootstrap/jQuery/Moment.js
+							</p>
+						</div>
+					</div>
+					<div class="thumb-container image">
+						<img
+							class="thumbnail image_img"
+							src="./assets/team_profile_generator.png"
+						/>
+						<div class="image__overlay image__overlay--blur">
+							<a
+								class="btn"
+								href="https://github.com/jorge30fm/team_profile_generator"
+								target="_blank"
+								><div class="image__title">Organize your team roster</div></a
+							>
+							<p class="image__description">Html/Bootstrap/Node/Jest</p>
+						</div>
+					</div>
+					<br />
+					<div class="thumb-container image">
+						<img
+							class="thumbnail image_img"
+							src="./assets/taskmaster_pro.png"
+						/>
+						<div class="image__overlay image__overlay--blur">
+							<a
+								class="btn"
+								href="https://jorge30fm.github.io/taskmaster-pro/"
+								target="_blank"
+								><div class="image__title">
+									Keep track of your tasks and to do lists
+								</div></a
+							>
+							<p class="image__description">Html/CSS/jQuery/</p>
+						</div>
+					</div>
+					<div class="thumb-container image">
+						<img class="thumbnail image_img" src="./assets/note_taker.png" />
+						<div class="image__overlay image__overlay--blur">
+							<a
+								class="btn"
+								href="https://mysterious-spire-65993.herokuapp.com/"
+								target="_blank"
+								><div class="image__title">Store notes for future use</div></a
+							>
+							<p class="image__description">
+								Html/CSS/Jest/Express.js/API/Heroku
+							</p>
+						</div>
+					</div>
+					<div class="thumb-container image">
+						<img class="thumbnail image_img" src="./assets/git_it_done.png" />
+						<div class="image__overlay image__overlay--blur">
+							<a
+								class="btn"
+								href="https://jorge30fm.github.io/git-it-done/index.html"
+								target="_blank"
+								><div class="image__title">
+									Find open source projects to work on
+								</div></a
+							>
+							<p class="image__description">html/CSS/JavaScript/GitHub API</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="form-section">
+				<div class="contactMe" id="contact-me">
+					<form
+						id="form"
+						action="https://formsubmit.co/fe55bf0e208b736648be61b6fae886f6"
+						method="POST"
+					>
+						<h2 id="contactTitle" class="title">Get in touch</h2>
+						<p id="contactSubText">
+							Want to work together? Send me a message below!
+						</p>
+						<input type="text" name="Name" placeholder="Your Name" required />
+						<input
+							type="email"
+							name="Email"
+							placeholder="Your Email"
+							required
+						/>
+						<input type="number" name="Phone" placeholder="YourPhone Number" />
+						<textarea name="Message" placeholder="Message" required> </textarea>
+						<button class="button btn btn-6 submit" type="submit">
+							<span>SEND</span>
+						</button>
+					</form>
+					<div id="contact-info">
+						<h3 class="title">Contact Information</h3>
+						<div id="contact-container">
+							<div class="row">
+								<i class="fa-solid fa-square-phone"></i>
+								<p>Phone: <span class="lighter">(336) 918 - 2417</span></p>
+							</div>
+							<div class="row">
+								<i class="fa-solid fa-square-envelope"></i>
+								<p>Email: <span class="lighter">jorge30fm@gmail.com</span></p>
+							</div>
+							<div class="row">
+								<i class="fa-solid fa-location-dot"></i>
+								<p>Location: <span class="lighter">Chapel Hill, NC</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<img class="logoFooter" src="./assets/logo.png" alt="website logo" />
+			<div class="SMlogos">
+				<a href="https://www.instagram.com/jorgefmont/" target="_blank">
+					<i class="fa-brands fa-instagram-square"></i>
+				</a>
+				<a href="https://twitter.com/jorgefelixm30" target="_blank">
+					<i class="fa-brands fa-twitter-square"></i>
+				</a>
+				<a
+					href="https://www.linkedin.com/in/jorge-monteagudo-4a348814a/"
+					target="_blank"
+				>
+					<i class="fa-brands fa-linkedin"></i>
+				</a>
+				<a href="https://github.com/jorge30fm" target="_blank">
+					<i class="fa-brands fa-github-square"></i>
+				</a>
+			</div>
+			<p>© Copyright 2022. All rights reserved</p>
+		</footer>
 
-        <section id="contact-me"
-         class="contact-me">
-            <h3 class="section-title">Get in Touch</h3>
-            <p class="text"> Tell me about your project<br>
-                and we can create something together.<br><br> <span>Let's get in touch.</span></p>
-
-            <div class="contact-flex">
-                <address class="left-icons">
-                    <div class="contact-info">
-                        <div class="contact-icon">
-                            <img class="icono" id="location" src="./assets/images/location-icon.png" alt="location icon"/>
-                        </div>
-                        <p>
-                        Charlotte, NC
-                        </p>
-                    </div>
-                    <div class="contact-info">
-                        <div class="contact-icon">
-                            <img class="icono" id="mail" src="./assets/images/email-icon.png" alt="email icon"/>
-                        </div>
-                        <p>
-                            <a href="mailto:jorge30fm@gmail.com">jorge30fm@gmail.com</a>
-                        </p>
-                    </div>
-                    <div class="contact-info">
-                        <div class="contact-icon">
-                            <img class="icono" id="phone" src="./assets/images/phone-icon.png" alt="location icon"/>
-                        </div>
-                         <p>
-                             (336) 918-2417
-                        </p>
-                    </div>
-                </address>
-                <form>
-                    <input type="text" id="contact-name" class="form-input" placeholder="Name"/>
-                    <input type="email" id="email" class="form-input" placeholder="Email"/>
-                    <input type="tel" id="cellphone" class="form-input" placeholder="Phone Number"/>
-                    <textarea id="contact-message" class="form-input" placeholder="Enter your message here"></textarea>
-                    <button type="submit">
-                        Send
-                    </button>
-                </form>
-            </div>
-        </section>
-    </body>
-<!-- footer -->
-    <footer>
-        <img class="logo" src="./assets/images/heroImage.png" alt="website logo"/>
-        <div>
-            <a href="https://www.instagram.com/jorgefmont/" target="_blank">
-                <img src="./assets/images/instagram.png" alt="instagram icon">
-            </a>
-            <a href="https://twitter.com/jorgefelixm30" target="_blank">
-                <img src="./assets/images/twitter.png" alt="twitter icon"
-            </a>
-            <a href="https://www.linkedin.com/in/jorge-monteagudo-4a348814a/" target="_blank">
-             <img src="./assets/images/linkedin.png" alt="linked-in icon">
-            </a>
-            <a href="https://github.com/jorge30fm" target="_blank">
-                <img src="./assets/images/github.png" at="Git-Hub icon">
-            </a>
-        </div>
-        <p>© Copyright 2022. All rights reserved </p>
-    </footer>
+		<script src="./script.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/jquery.svg3dtagcloud.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				var entries = [
+					{
+						label: "HTML5",
+						url: "http://niklasknaack.blogspot.de/",
+						target: "_top",
+					},
+					{
+						label: "CSS",
+						url: "https://www.w3.org/Style/CSS/Overview.en.html",
+						target: "_top",
+					},
+					{
+						label: "JAVASCRIPT",
+						url: "https://www.javascript.com/",
+						target: "_top",
+					},
+					{ label: "GitHub", url: "https://github.com/", target: "_top" },
+					{ label: "jQuery", url: "https://jquery.com/", target: "_top" },
+					{
+						label: "EXPRESS.JS",
+						url: "https://expressjs.com/",
+						target: "_top",
+					},
+					{ label: "MYSQL", url: "https://www.mysql.com/", target: "_top" },
+					{ label: "SEQUELIZE", url: "https://sequelize.org/", target: "_top" },
+					{
+						label: "HANDLEBARS.JS",
+						url: "https://handlebarsjs.com/",
+						target: "_top",
+					},
+					{ label: "JEST", url: "https://jestjs.io/", target: "_top" },
+					{
+						label: "API",
+						url: "https://www.w3.org/standards/webdesign/script",
+						target: "_top",
+					},
+					{
+						label: "JSON",
+						url: "https://www.json.org/json-en.html",
+						target: "_top",
+					},
+					{ label: "REST", url: "https://restfulapi.net/", target: "_top" },
+					{
+						label: "AJAX",
+						url: "https://api.jquery.com/category/ajax/",
+						target: "_top",
+					},
+					{ label: "GIT", url: "https://git-scm.com/doc", target: "_top" },
+					{ label: "GITHUB", url: "https://github.com/", target: "_top" },
+					{
+						label: "PHOTOSHOP",
+						url: "https://www.adobe.com/products/photoshop/landpa.html?sdid=KKQIN&mv=search&kw=photoshop&ef_id=Cj0KCQjw2_OWBhDqARIsAAUNTTFh9Qa9NOepLJz4CzJP5u6-8hgGuHtqrZQ7cIDWJLCMELwL3J182ckaAm-mEALw_wcB:G:s&s_kwcid=AL!3085!3!522504777747!b!!g!!%2Badobephotoshop!8490077677!89242623787&gclid=Cj0KCQjw2_OWBhDqARIsAAUNTTFh9Qa9NOepLJz4CzJP5u6-8hgGuHtqrZQ7cIDWJLCMELwL3J182ckaAm-mEALw_wcB",
+						target: "_top",
+					},
+				];
+				var settings = {
+					entries: entries,
+					width: 480,
+					height: 480,
+					radius: "65%",
+					radiusMin: 75,
+					bgDraw: true,
+					bgColor: "none",
+					opacityOver: 1.0,
+					opacityOut: 0.05,
+					opacitySpeed: 6,
+					fov: 800,
+					speed: 1,
+					fontFamily: "Oswald, Arial, sans-serif",
+					fontSize: "15",
+					fontColor: "#fff",
+					fontWeight: "bold", //bold
+					fontStyle: "normal", //italic
+					fontStretch: "normal", //wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+					fontToUpperCase: true,
+					tooltipFontFamily: "Oswald, Arial, sans-serif",
+					tooltipFontSize: "11",
+					tooltipFontColor: "#fff",
+					tooltipFontWeight: "normal", //bold
+					tooltipFontStyle: "normal", //italic
+					tooltipFontStretch: "normal", //wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+					tooltipFontToUpperCase: false,
+					tooltipTextAnchor: "middle",
+					tooltipDiffX: 0,
+					tooltipDiffY: 20,
+				};
+				$("#tag").svg3DTagCloud(settings);
+			});
+		</script>
+	</body>
 </html>
