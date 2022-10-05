@@ -71,103 +71,171 @@
 			</div>
 			<div id="skills">
 				<h2 class="section-title title no-mg">SKILLS</h2>
-				<div id="tag"></div>
+				<div class="flex-row justify-space-around align-center margin-5prc">
+					<div id="tag" class="col-6"></div>
+					<div
+						class="col-auto skill-text flex-row bg-black-opacity justify-space-around align-center"
+					>
+						<div class="col-12">
+							<h3 class="white text-center">
+								To learn more about my experience
+							</h3>
+							<h3 class="white text-center">download my resume</h3>
+						</div>
+						<a
+							class="button btn btn-6 download"
+							href="./assets/JorgeM_Resume.pdf"
+							download="JorgeM_Resume.pdf"
+							><i class="fa-solid fa-circle-down"></i
+						></a>
+					</div>
+				</div>
 			</div>
 			<div id="myprojects">
 				<h2 class="section-title title">MY PORTFOLIO</h2>
-				<div id="portfolio">
-					<div class="thumb-container image">
-						<img class="thumbnail image_img" src="./assets/siteseers.jpg" />
-						<div class="image__overlay image__overlay--blur">
-							<a
-								class="btn"
-								href=https://stark-journey-76834.herokuapp.com/login
-								target="_blank"
-								><div class="image__title">Full-Stack application - List to book and find campsites near you</div></a
-							>
-							<p class="image__description">
-								React/Express/MongoDB/Cloudinary
-							</p>
+				<div class="flex-row justify-center">
+					<div class="modal" id="modal1">
+						<div class="overflow-scroll flex-row justify-center">
+							<h1 id="project-title" class="text-center col-12">Title</h1>
+							<p id="project-text" class="col-12 margin-top">Text here</p>
+							<h3 class="col-12 text-center margin-top">Technologies used:</h3>
+							<ul
+								id="technologies"
+								class="text-center col-12 margin-top"
+								c
+							></ul>
+							<div class="col-sm-10 flex-row justify-space-between margin-top">
+								<a
+									id="project-code"
+									class="col-5 text-center btn-secondary"
+									target="_blank"
+									>View Code</a
+								>
+								<a
+									id="project-deployed-app"
+									class="col-5 text-center btn-primary text-center"
+									target="_blank"
+									>Open App</a
+								>
+							</div>
 						</div>
 					</div>
-					<div class="thumb-container image">
-						<img class="thumbnail image_img" src="./assets/travel_size.JPG" />
-						<div class="image__overlay image__overlay--blur">
-							<a
-								class="btn"
-								href="https://dry-refuge-26643.herokuapp.com/"
-								target="_blank"
-								><div class="image__title">CMS Style Travel Blog</div></a
+					<div id="portfolio">
+						<!-- SITESEERS -->
+						<div class="thumb-container image" id="siteseers">
+							<!-- image -->
+							<img
+								class="thumbnail image_img"
+								src="./assets/projects/siteseers.jpg"
+							/>
+							<!-- text on hover -->
+							<div
+								class="image__overlay image__overlay--blur"
+								onclick="showmodal('siteseers')"
 							>
-							<p class="image__description">
-								Html/CSS/API/Cloudinary/Handlebars/Express
-							</p>
+								<div class="image__title">
+									<p>
+										Single Page Application created using the MERN stack. Find
+										and book campsites near you.
+									</p>
+									<p class="margin-top font-small">Click to learn more</p>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="thumb-container image">
-						<img class="thumbnail image_img" src="./assets/pngwing.com.png" />
-						<div class="image__overlay image__overlay--blur">
-							<a
-								class="btn"
-								href="https://glo6al.github.io/project-1-tm-9/"
-								target="_blank"
-								><div class="image__title">
-									A tinder-style animal adoption website
-								</div></a
-							>
-							<p class="image__description">Html/CSS/jQuery/APi/Bulma</p>
-						</div>
-					</div>
-					<div class="thumb-container image">
-						<img
-							class="thumbnail image_img"
-							src="assets/weather_dashboard.png"
-						/>
-						<div class="image__overlay image__overlay--blur">
-							<a
-								class="btn"
-								href="https://jorge30fm.github.io/weather-dashboard/"
-								target="_blank"
-								><div class="image__title">
-									Gather weather data of a city of your choice
-								</div></a
-							>
-							<p class="image__description">
-								html/CSS/JavaScript/OpenWeather Api/<br />Bootstrap/jQuery/Moment.js
-							</p>
-						</div>
-					</div>
 
-					<br />
-					<div class="thumb-container image">
-						<img
-							class="thumbnail image_img"
-							src="./assets/taskmaster_pro.png"
-						/>
-						<div class="image__overlay image__overlay--blur">
-							<a
-								class="btn"
-								href="https://jorge30fm.github.io/taskmaster-pro/"
-								target="_blank"
-								><div class="image__title">
-									Keep track of your tasks and to do lists
-								</div></a
+						<!-- shop shop -->
+						<div class="thumb-container image" id="shop-shop">
+							<!-- image -->
+							<img
+								class="thumbnail image_img"
+								src="./assets/projects/shop-shop.jpg"
+							/>
+							<!-- text on hover -->
+							<div
+								class="image__overlay image__overlay--blur"
+								onclick="showmodal('shop-shop')"
 							>
-							<p class="image__description">Html/CSS/jQuery/</p>
+								<div class="image__title">
+									<p>
+										Ecommerce site. Single page application created with React.
+										Add items to shopping cart, and make purchases
+									</p>
+									<p class="margin-top font-small">Click to see more</p>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="thumb-container image">
-						<img class="thumbnail image_img" src="./assets/git_it_done.png" />
-						<div class="image__overlay image__overlay--blur">
-							<a
-								class="btn"
-								href="https://jorge30fm.github.io/git-it-done/index.html"
-								target="_blank"
-								><div class="image__title">
-									Find open source projects to work on
-								</div></a
+						<!-- DEEP THOUGHTS -->
+						<div class="thumb-container image" id="deep-thoughts">
+							<img
+								class="thumbnail image_img"
+								src="./assets/projects/deep-thoughts.jpg"
+							/>
+							<div
+								class="image__overlay image__overlay--blur"
+								onclick="showmodal('deep-thoughts')"
 							>
-							<p class="image__description">html/CSS/JavaScript/GitHub API</p>
+								<div class="image__title">
+									<p>
+										Social Media App created using React. Post thoughts, add
+										reactions, and add friends to your account
+									</p>
+									<p class="margin-top font-small">Click to see more</p>
+								</div>
+							</div>
+						</div>
+						<!-- BUDGET TRACKER -->
+						<div class="thumb-container image" id="budget-tracker">
+							<img
+								class="thumbnail image_img"
+								src="./assets/projects/budget-tracker.jpg"
+							/>
+							<div
+								class="image__overlay image__overlay--blur"
+								onclick="showmodal('budget-tracker')"
+							>
+								<div class="image__title">
+									<p>
+										Track withdrawals, and deposits with or without internet
+										connection
+									</p>
+									<p class="margin-top font-small">Click to see more</p>
+								</div>
+							</div>
+						</div>
+						<!-- WEATHER DASHBOARD -->
+						<div class="thumb-container image" id="weather-dashboard">
+							<img
+								class="thumbnail image_img"
+								src="./assets/projects/weather_dashboard.png"
+							/>
+							<div
+								class="image__overlay image__overlay--blur"
+								onclick="showmodal('weather-dashboard')"
+							>
+								<div class="image__title">
+									<p>
+										See current weather conditions and five day forecast of a
+										city of your choice
+									</p>
+									<p class="margin-top font-small">Click to see more</p>
+								</div>
+							</div>
+						</div>
+						<!-- FURBABY FINDER -->
+						<div class="thumb-container image" id="furbaby-finder">
+							<img
+								class="thumbnail image_img"
+								src="./assets/projects/furbaby.png"
+							/>
+							<div
+								class="image__overlay image__overlay--blur"
+								onclick="showmodal('furbaby-finder')"
+							>
+								<div class="image__title">
+									<p>Find and adopt pets near you</p>
+									<p class="margin-top font-small">Click to see more</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -259,21 +327,41 @@
 						url: "https://www.javascript.com/",
 						target: "_top",
 					},
-					{ label: "GitHub", url: "https://github.com/", target: "_top" },
-					{ label: "jQuery", url: "https://jquery.com/", target: "_top" },
+					{
+						label: "GitHub",
+						url: "https://github.com/",
+						target: "_top",
+					},
+					{
+						label: "jQuery",
+						url: "https://jquery.com/",
+						target: "_top",
+					},
 					{
 						label: "EXPRESS.JS",
 						url: "https://expressjs.com/",
 						target: "_top",
 					},
-					{ label: "MYSQL", url: "https://www.mysql.com/", target: "_top" },
-					{ label: "SEQUELIZE", url: "https://sequelize.org/", target: "_top" },
+					{
+						label: "MYSQL",
+						url: "https://www.mysql.com/",
+						target: "_top",
+					},
+					{
+						label: "SEQUELIZE",
+						url: "https://sequelize.org/",
+						target: "_top",
+					},
 					{
 						label: "HANDLEBARS.JS",
 						url: "https://handlebarsjs.com/",
 						target: "_top",
 					},
-					{ label: "JEST", url: "https://jestjs.io/", target: "_top" },
+					{
+						label: "JEST",
+						url: "https://jestjs.io/",
+						target: "_top",
+					},
 					{
 						label: "API",
 						url: "https://www.w3.org/standards/webdesign/script",
@@ -284,17 +372,79 @@
 						url: "https://www.json.org/json-en.html",
 						target: "_top",
 					},
-					{ label: "REST", url: "https://restfulapi.net/", target: "_top" },
+					{
+						label: "REST",
+						url: "https://restfulapi.net/",
+						target: "_top",
+					},
 					{
 						label: "AJAX",
 						url: "https://api.jquery.com/category/ajax/",
 						target: "_top",
 					},
-					{ label: "GIT", url: "https://git-scm.com/doc", target: "_top" },
-					{ label: "GITHUB", url: "https://github.com/", target: "_top" },
+					{
+						label: "GIT",
+						url: "https://git-scm.com/doc",
+						target: "_top",
+					},
+					{
+						label: "GITHUB",
+						url: "https://github.com/",
+						target: "_top",
+					},
 					{
 						label: "PHOTOSHOP",
 						url: "https://www.adobe.com/products/photoshop/landpa.html?sdid=KKQIN&mv=search&kw=photoshop&ef_id=Cj0KCQjw2_OWBhDqARIsAAUNTTFh9Qa9NOepLJz4CzJP5u6-8hgGuHtqrZQ7cIDWJLCMELwL3J182ckaAm-mEALw_wcB:G:s&s_kwcid=AL!3085!3!522504777747!b!!g!!%2Badobephotoshop!8490077677!89242623787&gclid=Cj0KCQjw2_OWBhDqARIsAAUNTTFh9Qa9NOepLJz4CzJP5u6-8hgGuHtqrZQ7cIDWJLCMELwL3J182ckaAm-mEALw_wcB",
+						target: "_top",
+					},
+					{
+						label: "MONGO",
+						url: "https://mongodb.com/",
+						target: "_top",
+					},
+					{
+						label: "APOLLO",
+						url: "https://apollographql.com/",
+						target: "_top",
+					},
+					{
+						label: "GRAPHQL",
+						url: "https://graphql.org/",
+						target: "_top",
+					},
+					{
+						label: "REACT",
+						url: "https://reactjs.org/",
+						target: "_top",
+					},
+					{
+						label: "MERN",
+						url: "https://github.com/",
+						target: "_top",
+					},
+					{
+						label: "CLOUDINARY",
+						url: "https://cloudinary.com/",
+						target: "_top",
+					},
+					{
+						label: "BOOTSTRAP",
+						url: "https://getbootstrap.com/",
+						target: "_top",
+					},
+					{
+						label: "NODE",
+						url: "https://nodejs.org/",
+						target: "_top",
+					},
+					{
+						label: "MONGOOSE",
+						url: "https://mongoosejs.com/",
+						target: "_top",
+					},
+					{
+						label: "NOSQL",
+						url: "https://en.wikipedia.org/wiki/NoSQL",
 						target: "_top",
 					},
 				];
@@ -332,5 +482,10 @@
 				$("#tag").svg3DTagCloud(settings);
 			});
 		</script>
+		<script>
+					function showmodal(projectID) {
+						modal("modal1", projectID); // show
+					}
+				</script>
 	</body>
 </html>
