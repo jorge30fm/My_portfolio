@@ -83,7 +83,7 @@ function modal(id, projectID) {
 				"href",
 				"https://github.com/jorge30fm/shop-shop"
 			);
-			projectDeployedLink.setAttribute("href", "");
+			projectDeployedLink.setAttribute("href", "https://fathomless-falls-26947.herokuapp.com/");
 			break;
 		case "deep-thoughts":
 			projectTitle.innerHTML = "Deep-Thoughts";
